@@ -4,7 +4,7 @@
 
 **To use the notebook, please start the server.**
 
-<a target="_blank" href="https://colab.research.google.com/github/theostos/small-pytanque-tp/blob/main/tp.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/mlelarge/small-pytanque-tp/blob/main/tp.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 

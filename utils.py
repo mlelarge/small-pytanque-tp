@@ -210,7 +210,7 @@ def generate_tactics_wala(pipeline, model, tokenizer, max_beam_size, goals, step
     device = 0
     prompt = generate_prompt_wala(goals, steps=steps, incorrect_steps=incorrect_steps, theorems=theorems, definitions=definitions)
     prompt_tokenized = tokenizer(prompt, return_tensors='pt')
-    output = pipeline(prompt, max_length=100, num_return_sequences=max_beam_size, do_sample=True, temperature=1.2)
+    output = pipeline(prompt, max_length=100, max_new_tokens=None, num_return_sequences=max_beam_size, do_sample=True, temperature=1.2)
     input_ids, attention_mask = prompt_tokenized.values()
 
     result_output = []
